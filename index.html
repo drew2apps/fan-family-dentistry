@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fan Family Dentistry · Santa Rosa family dentist</title>
+<meta name="description" content="Gentle family dentistry in Santa Rosa with Dr. Yunfei Fan, D.D.S. Walk-ins welcome. We speak English, Spanish and Chinese.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#12352f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Ccircle cx='22' cy='22' r='22' fill='%2312352f'/%3E%3Cpath d='M15.5 12c-3 0-5.5 2.4-5.5 5.6 0 3 1.2 5.3 2.1 8.2.8 2.7 1.2 9.2 3.9 9.2 2.1 0 2.2-6.4 4.7-6.4h2.6c2.5 0 2.6 6.4 4.7 6.4 2.7 0 3.1-6.5 3.9-9.2.9-2.9 2.1-5.2 2.1-8.2 0-3.2-2.5-5.6-5.5-5.6-2.6 0-4 1.6-6.5 1.6s-3.9-1.6-6.5-1.6z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=Noto+Sans+SC:wght@400;700&display=swap">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Dentist","name":"Fan Family Dentistry","url":"https://fanfamilydentistry.com/","telephone":"+1-707-623-9471","faxNumber":"+1-707-978-2463","email":"drfan@fanfamilydentistry.com","address":{"@type":"PostalAddress","streetAddress":"1420 Guerneville Road, Suite 5","addressLocality":"Santa Rosa","addressRegion":"CA","postalCode":"95403","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"09:00","closes":"12:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"13:30","closes":"17:30"}],"knowsLanguage":["en","es","zh"],"founder":{"@type":"Person","name":"Yunfei Fan, D.D.S."}}
+</script>
+<style>
+/* Layout: a calm, phone-first practice page. Evergreen ink, mint tints, one marigold call to action. */
+:root {
+  --ink: #12352f; --ink-2: #2c4a44; --muted: #4a5f5a; --ground: #f5f7f4; --surface: #ffffff;
+  --line: #d5ded9; --mint: #dcefe6; --mint-2: #cfe6db; --marigold: #f3b33d; --sun: #fdf1d6;
+  --green: #2f6f5c; --open: #3fbf7f; --closed: #e0785a; --warn: #8a3a22;
+  --f-display: "Bricolage Grotesque", "Noto Sans SC", system-ui, sans-serif;
+  --f-body: "Atkinson Hyperlegible", "Noto Sans SC", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--ground); color: var(--ink); font: 17px/1.55 var(--f-body); }
+a { color: var(--ink); }
+img { max-width: 100%; }
+:focus-visible { outline: 3px solid var(--marigold); outline-offset: 2px; }
+.wrap { max-width: 1200px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3 { font-family: var(--f-display); letter-spacing: -0.02em; margin: 0; text-wrap: balance; }
+h2 { font-size: clamp(30px, 4vw, 42px); font-weight: 800; line-height: 1.08; }
+p { margin: 0; }
+.btn { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 700; border-radius: 14px; padding: 14px 22px; min-height: 48px; border: 0; cursor: pointer; font: 700 17px/1.2 var(--f-body); }
+.btn-gold { background: var(--marigold); color: var(--ink); }
+.btn-ink { background: var(--ink); color: #fff; }
+.btn-mint { background: var(--mint); color: var(--ink); }
+.btn:hover { filter: brightness(0.96); }
+.eyebrow { font-weight: 700; font-size: 14px; letter-spacing: 0.07em; text-transform: uppercase; color: var(--green); }
+.dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex: none; }
+.placeholder { border-radius: 28px; display: grid; place-items: center; text-align: center; padding: 28px; font-weight: 700; color: var(--green); background: repeating-linear-gradient(135deg, var(--mint) 0 16px, var(--mint-2) 16px 32px); }
+
+/* preview note + utility strip */
+.preview { background: var(--sun); color: #5b4210; font-size: 14px; text-align: center; padding: 8px 16px; }
+.strip { background: var(--ink); color: #e8f3ee; font-size: 14px; }
+.strip .wrap { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; justify-content: space-between; padding-block: 8px; }
+.strip .status { display: inline-flex; align-items: center; gap: 8px; }
+.langs { display: flex; gap: 4px; }
+.langs button { background: transparent; border: 0; color: #fff; padding: 5px 11px; border-radius: 999px; font: inherit; cursor: pointer; }
+.langs button[aria-pressed="true"] { background: rgba(255, 255, 255, 0.18); }
+
+/* header */
+header.site { background: var(--surface); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 5; }
+header.site .wrap { display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: center; justify-content: space-between; padding-block: 14px; }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.brand b { display: block; font-family: var(--f-display); font-weight: 800; font-size: 22px; line-height: 1.1; letter-spacing: -0.01em; }
+.brand small { display: block; color: var(--muted); font-size: 14px; }
+nav.main { display: flex; flex-wrap: wrap; gap: 6px 22px; align-items: center; font-weight: 700; font-size: 16px; }
+nav.main a { text-decoration: none; }
+nav.main a:hover { text-decoration: underline; text-underline-offset: 4px; }
+nav.main .btn { padding: 11px 16px; min-height: 44px; font-size: 16px; }
+
+/* hero */
+.hero { display: flex; flex-wrap: wrap; gap: 48px; align-items: center; padding-block: 60px 56px; }
+.hero-copy { flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 20px; }
+.hero h1 { font-weight: 800; font-size: clamp(40px, 5.4vw, 66px); line-height: 1.02; letter-spacing: -0.025em; }
+.hero .lead { font-size: 20px; color: var(--ink-2); max-width: 34em; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.chips { display: flex; flex-wrap: wrap; gap: 10px; }
+.chip { background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 700; }
+.hero-art { flex: 1 1 380px; min-width: 0; position: relative; }
+.hero-art .placeholder { aspect-ratio: 4 / 5; }
+.open-card { position: absolute; left: -16px; bottom: 26px; background: var(--surface); border-radius: 18px; padding: 14px 18px; box-shadow: 0 14px 40px rgba(18, 53, 47, 0.16); display: grid; gap: 4px; max-width: 290px; }
+.open-card b { display: inline-flex; align-items: center; gap: 8px; }
+.open-card span { font-size: 15px; color: var(--muted); }
+
+/* languages band */
+.band { background: var(--ink); color: #fff; }
+.band .wrap { display: flex; flex-wrap: wrap; gap: 14px 40px; align-items: center; justify-content: space-between; padding-block: 34px; }
+.band p.big { font-family: var(--f-display); font-weight: 700; font-size: clamp(22px, 3vw, 30px); line-height: 1.25; }
+.band .es { color: var(--marigold); }
+.band .zh { color: #9fd9c2; }
+.band p.small { color: #cfe6db; max-width: 26em; }
+
+/* sections */
+section.block { padding-block: 64px 24px; }
+.head { display: flex; flex-wrap: wrap; gap: 12px 40px; align-items: end; justify-content: space-between; margin-bottom: 26px; }
+.head p { max-width: 30em; color: var(--muted); }
+.services { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px; }
+.svc { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 22px; display: grid; gap: 10px; align-content: start; }
+.svc svg { width: 40px; height: 40px; }
+.svc h3 { font-family: var(--f-body); letter-spacing: 0; font-size: 20px; }
+.svc p { color: var(--muted); font-size: 16px; }
+
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 28px; padding: clamp(24px, 4vw, 40px); display: flex; flex-wrap: wrap; gap: 36px; }
+.panel .side { flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 14px; }
+.panel .list { flex: 1.4 1 400px; min-width: 0; display: flex; flex-wrap: wrap; gap: 8px; align-content: flex-start; }
+label.lbl { font-weight: 700; font-size: 15px; }
+input[type="search"], input[type="text"], input[type="tel"], select { width: 100%; padding: 13px 14px; border-radius: 12px; border: 1px solid #9fb7ae; background: var(--surface); color: var(--ink); font: 17px var(--f-body); min-height: 48px; }
+#plan { border: 2px solid var(--ink); background: var(--ground); font-size: 18px; }
+.plan { display: inline-flex; align-items: center; gap: 8px; background: var(--mint); border-radius: 999px; padding: 9px 14px; font-weight: 700; font-size: 15px; }
+.nomatch { font-weight: 700; color: var(--warn); }
+.pay { border-top: 1px solid var(--line); padding-top: 16px; display: grid; gap: 6px; }
+.pay span { color: var(--muted); font-size: 16px; }
+
+.about { display: flex; flex-wrap: wrap; gap: 48px; align-items: center; }
+.about .placeholder { flex: 1 1 320px; aspect-ratio: 1; background: repeating-linear-gradient(135deg, #f8e3b8 0 16px, #f3d79f 16px 32px); color: #6b4a12; }
+.about .copy { flex: 1.3 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 18px; }
+.about .copy > p { font-size: 19px; color: var(--ink-2); }
+.timeline { border-left: 2px solid var(--line); margin-left: 6px; display: grid; gap: 18px; }
+.timeline div { display: flex; gap: 16px; padding-left: 20px; position: relative; }
+.timeline div::before { content: ""; position: absolute; left: -7px; top: 7px; width: 12px; height: 12px; border-radius: 50%; background: var(--marigold); }
+.timeline div:last-child::before { background: var(--ink); }
+.timeline b { min-width: 56px; }
+
+.reviews { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.reviews figure { margin: 0; background: var(--surface); border: 1px dashed #9fb7ae; border-radius: 20px; padding: 24px; display: grid; gap: 10px; }
+.reviews figcaption { color: var(--muted); font-size: 15px; }
+
+.visit-wrap { background: var(--surface); border-top: 1px solid var(--line); margin-top: 40px; }
+.visit { display: flex; flex-wrap: wrap; gap: 40px; padding-block: 64px; }
+.visit .info { flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 18px; }
+.map { width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 20px; background: var(--mint); }
+table.hours { border-collapse: collapse; width: 100%; font-size: 17px; }
+table.hours caption { text-align: left; font-weight: 700; padding-bottom: 8px; }
+table.hours th, table.hours td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #e3eae6; }
+table.hours th { font-weight: 400; }
+table.hours tr.today { background: var(--sun); }
+table.hours tr.today th { font-weight: 700; }
+.book { flex: 1 1 360px; min-width: 0; background: var(--ground); border-radius: 24px; padding: 30px; display: flex; flex-direction: column; gap: 14px; align-self: flex-start; scroll-margin-top: 90px; }
+.book form { display: flex; flex-direction: column; gap: 14px; }
+.row2 { display: flex; flex-wrap: wrap; gap: 12px; }
+.row2 > div { flex: 1 1 150px; display: grid; gap: 6px; }
+.field { display: grid; gap: 6px; }
+.check { display: flex; gap: 10px; align-items: center; font-size: 16px; }
+.check input { width: 20px; height: 20px; }
+.thanks { background: var(--mint); border-radius: 16px; padding: 18px; display: grid; gap: 6px; }
+
+footer { background: var(--ink); color: #cfe6db; font-size: 15px; }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 24px 48px; justify-content: space-between; padding-block: 40px; }
+footer b { color: #fff; font-family: var(--f-display); font-size: 20px; }
+footer a { color: #cfe6db; }
+footer .col { display: grid; gap: 4px; }
+
+/* phone: action bar pinned to the bottom */
+.callbar { display: none; }
+@media (max-width: 720px) {
+  nav.main .lnk { display: none; }
+  .hero { padding-block: 32px 40px; gap: 28px; }
+  .open-card { left: 12px; bottom: 12px; }
+  .callbar { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; position: fixed; left: 0; right: 0; bottom: 0; z-index: 6;
+    background: var(--surface); border-top: 1px solid var(--line); box-shadow: 0 -10px 30px rgba(18, 53, 47, 0.08);
+    padding: 10px max(12px, env(safe-area-inset-right, 0px)) calc(12px + env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px)); }
+  .callbar a { text-decoration: none; border-radius: 14px; padding: 9px 6px; display: grid; justify-items: center; gap: 2px; font-weight: 700; font-size: 14px; min-height: 48px; }
+  body { padding-bottom: 86px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<div class="preview">Preview of the new Fan Family Dentistry website. Real photos and reviews are coming.</div>
+
+<div class="strip">
+  <div class="wrap">
+    <div style="display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center">
+      <span class="status"><span class="dot" id="dot1"></span><span id="statusLong">Office hours: Mon to Thu, 9:00 AM to 5:30 PM</span></span>
+      <span data-t="walkins">Walk-ins welcome</span>
+    </div>
+    <div class="langs" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">English</button>
+      <button type="button" data-lang="es" aria-pressed="false">Español</button>
+      <button type="button" data-lang="zh" aria-pressed="false">中文</button>
+    </div>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Fan Family Dentistry, home">
+      <svg width="44" height="44" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="22" fill="#dcefe6"/><path d="M15.5 12c-3 0-5.5 2.4-5.5 5.6 0 3 1.2 5.3 2.1 8.2.8 2.7 1.2 9.2 3.9 9.2 2.1 0 2.2-6.4 4.7-6.4h2.6c2.5 0 2.6 6.4 4.7 6.4 2.7 0 3.1-6.5 3.9-9.2.9-2.9 2.1-5.2 2.1-8.2 0-3.2-2.5-5.6-5.5-5.6-2.6 0-4 1.6-6.5 1.6s-3.9-1.6-6.5-1.6z" fill="#fff" stroke="#12352f" stroke-width="2" stroke-linejoin="round"/><path d="M17 21.5c1.4 1.6 3 2.4 5 2.4s3.6-.8 5-2.4" fill="none" stroke="#f3b33d" stroke-width="2.4" stroke-linecap="round"/></svg>
+      <span><b>Fan Family Dentistry</b><small>Yunfei Fan, D.D.S. · Santa Rosa</small></span>
+    </a>
+    <nav class="main" aria-label="Main">
+      <a class="lnk" href="#services" data-t="navServices">Services</a>
+      <a class="lnk" href="#insurance" data-t="navInsurance">Insurance &amp; payment</a>
+      <a class="lnk" href="#about" data-t="navAbout">About Dr. Fan</a>
+      <a class="lnk" href="#visit" data-t="navVisit">Visit us</a>
+      <a class="btn btn-gold" href="tel:+17076239471">(707) 623-9471</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div class="hero-copy">
+      <span class="eyebrow" data-t="eyebrow">Family dentist in Santa Rosa</span>
+      <h1 data-t="h1">Gentle dental care for the whole family.</h1>
+      <p class="lead" data-t="sub">Dr. Yunfei Fan has been caring for smiles for more than 37 years. Walk-ins are welcome, kids too, and we speak English, Spanish and Chinese.</p>
+      <div class="actions">
+        <a class="btn btn-gold" href="tel:+17076239471">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+          <span data-t="call">Call (707) 623-9471</span>
+        </a>
+        <a class="btn btn-ink" href="#book" data-t="book">Request an appointment</a>
+      </div>
+      <div class="chips">
+        <span class="chip" data-t="chip1">37+ years of practice</span>
+        <span class="chip" data-t="chip2">Most PPO plans accepted</span>
+        <span class="chip" data-t="chip3">Kids welcome</span>
+        <span class="chip">English · Español · 中文</span>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="placeholder" role="img" aria-label="Photo coming soon">[Photo: Dr. Fan with a young patient]</div>
+      <div class="open-card">
+        <b><span class="dot" id="dot2"></span><span id="statusShort">Walk-ins welcome</span></b>
+        <span>1420 Guerneville Rd, Suite 5 · Santa Rosa</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="band">
+    <div class="wrap">
+      <p class="big">We speak your language. <span class="es">Hablamos español.</span> <span class="zh">我们说中文。</span></p>
+      <p class="small">Ask questions, understand your treatment and fill out forms in English, Spanish or Chinese.</p>
+    </div>
+  </div>
+
+  <section class="wrap block" id="services">
+    <div class="head">
+      <h2 data-t="servicesTitle">Care for every smile in the family</h2>
+      <p>From a child's first checkup to dentures for grandparents. We take our time and make every visit as comfortable as we can.</p>
+    </div>
+    <div class="services">
+      <div class="svc"><svg viewBox="0 0 24 24" fill="none" stroke="#2f6f5c" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3.5c-2.2 0-4 1.8-4 4.2 0 2.3.9 4 1.6 6.2.6 2 .9 7.6 2.9 7.6 1.6 0 1.6-5 3.5-5h2c1.9 0 1.9 5 3.5 5 2 0 2.3-5.6 2.9-7.6.7-2.2 1.6-3.9 1.6-6.2 0-2.4-1.8-4.2-4-4.2-2 0-3 1.2-5 1.2s-3-1.2-5-1.2z"/><path d="M19 1v3.5M17.25 2.75h3.5"/></svg><h3>Checkups &amp; cleanings</h3><p>Regular exams and cleanings that catch small problems early.</p></div>
+      <div class="svc"><svg viewBox="0 0 24 24" fill="none" stroke="#2f6f5c" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l4.5 3.5 4-6 4 6 4.5-3.5-2 10h-13z"/><path d="M6.5 21h11"/></svg><h3>Crowns &amp; bridges</h3><p>Restore broken teeth or fill a gap with a natural-looking fit.</p></div>
+      <div class="svc"><svg viewBox="0 0 24 24" fill="none" stroke="#2f6f5c" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3.5c-2.2 0-4 1.8-4 4.2 0 2.3.9 4 1.6 6.2.6 2 .9 7.6 2.9 7.6 1.6 0 1.6-5 3.5-5h2c1.9 0 1.9 5 3.5 5 2 0 2.3-5.6 2.9-7.6.7-2.2 1.6-3.9 1.6-6.2 0-2.4-1.8-4.2-4-4.2-2 0-3 1.2-5 1.2s-3-1.2-5-1.2z"/><path d="M9.5 8h5v4h-5z"/></svg><h3>Inlays &amp; onlays</h3><p>Strong, precise repairs for teeth too damaged for a simple filling.</p></div>
+      <div class="svc"><svg viewBox="0 0 24 24" fill="none" stroke="#2f6f5c" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></svg><h3>Cosmetic bonding</h3><p>Fix chips, gaps and stains in a single visit.</p></div>
+      <div class="svc"><svg viewBox="0 0 24 24" fill="none" stroke="#2f6f5c" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 9.5c0 5.5 3.8 9 8.5 9s8.5-3.5 8.5-9z"/><path d="M8 9.5v3.5M12 9.5v4.5M16 9.5v3.5"/></svg><h3>Partial &amp; full dentures</h3><p>Comfortable dentures made to fit, so you can eat and smile with confidence.</p></div>
+      <div class="svc"><svg viewBox="0 0 24 24" fill="none" stroke="#2f6f5c" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6.5c-2 0-3.5 1.6-3.5 3.7 0 2 .8 3.5 1.4 5.4.5 1.8.8 6.4 2.6 6.4 1.4 0 1.4-4.4 3.1-4.4h1.8c1.7 0 1.7 4.4 3.1 4.4 1.8 0 2-4.6 2.6-6.4.6-1.9 1.4-3.4 1.4-5.4 0-2.1-1.6-3.7-3.5-3.7-1.8 0-2.6 1-4.4 1s-2.6-1-4.6-1z"/><path d="M19.5 1.5v4.5M17.5 3.5l2-2 2 2"/></svg><h3>Extractions</h3><p>Simple and surgical extractions, including wisdom teeth and bone grafts.</p></div>
+      <div class="svc"><svg viewBox="0 0 24 24" fill="none" stroke="#2f6f5c" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3.5c-2.2 0-4 1.8-4 4.2 0 2.3.9 4 1.6 6.2.6 2 .9 7.6 2.9 7.6 1.6 0 1.6-5 3.5-5h2c1.9 0 1.9 5 3.5 5 2 0 2.3-5.6 2.9-7.6.7-2.2 1.6-3.9 1.6-6.2 0-2.4-1.8-4.2-4-4.2-2 0-3 1.2-5 1.2s-3-1.2-5-1.2z"/><path d="M10 9v6.5M14 9v6.5"/></svg><h3>Root canal therapy</h3><p>Save an infected tooth and stop the pain, with careful numbing throughout.</p></div>
+      <div class="svc"><svg viewBox="0 0 24 24" fill="none" stroke="#2f6f5c" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18"/><path d="M4.5 8.5h3v7h-3zM10.5 8.5h3v7h-3zM16.5 8.5h3v7h-3z"/></svg><h3>Clear aligners &amp; braces</h3><p>Straighten teeth with ClearCorrect or Reveal clear aligners, or traditional braces.</p></div>
+    </div>
+  </section>
+
+  <section class="wrap block" id="insurance">
+    <div class="panel">
+      <div class="side">
+        <h2 data-t="insTitle">Do you take my insurance?</h2>
+        <p style="color:var(--muted)">We're in network with most PPO plans. Type your plan to check. Not listed? Call us and we'll look it up for you.</p>
+        <label class="lbl" for="plan">Your insurance plan</label>
+        <input id="plan" type="search" placeholder="e.g. Delta Dental" autocomplete="off">
+        <p class="nomatch" id="nomatch" hidden>We couldn't find that plan. Call (707) 623-9471 and we'll check your coverage.</p>
+        <div class="pay">
+          <b>Payment options</b>
+          <span>All major credit cards accepted. Patient financing available.</span>
+        </div>
+      </div>
+      <div class="list" id="plans" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="wrap block" id="about">
+    <div class="about">
+      <div class="placeholder" role="img" aria-label="Portrait coming soon">[Portrait: Dr. Yunfei Fan]</div>
+      <div class="copy">
+        <span class="eyebrow">Meet your dentist</span>
+        <h2>Dr. Yunfei Fan, D.D.S.</h2>
+        <p>Dr. Fan has practiced general dentistry for more than 37 years. His philosophy is simple: exceptional care, delivered with comfort, so every patient leaves with a smile they're proud of.</p>
+        <div class="timeline">
+          <div><b>1987</b><span>Begins practicing at Fujian Union Hospital, where he led training for newly graduated dentists.</span></div>
+          <div><b>2003</b><span>Moves to California with his family and earns his California dental license, with training from UCLA.</span></div>
+          <div><b>Today</b><span>Caring for families across Santa Rosa and Northern California.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap block" aria-label="Patient reviews">
+    <div class="reviews">
+      <figure><blockquote style="margin:0;font-size:18px">[A real patient review, used with permission]</blockquote><figcaption>[Patient first name] · Google review</figcaption></figure>
+      <figure><blockquote style="margin:0;font-size:18px">[A real patient review, used with permission]</blockquote><figcaption>[Patient first name] · Google review</figcaption></figure>
+      <figure><blockquote style="margin:0;font-size:18px">[A real patient review, used with permission]</blockquote><figcaption>[Patient first name] · Google review</figcaption></figure>
+    </div>
+  </section>
+
+  <div class="visit-wrap" id="visit">
+    <div class="wrap visit">
+      <div class="info">
+        <h2 data-t="visitTitle">Visit us</h2>
+        <iframe class="map" title="Map to Fan Family Dentistry" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=1420+Guerneville+Rd+Suite+5,+Santa+Rosa,+CA+95403&amp;output=embed"></iframe>
+        <div style="display:grid;gap:4px">
+          <b style="font-size:19px">1420 Guerneville Road, Suite 5</b>
+          <span>Santa Rosa, CA 95403</span>
+          <span style="color:var(--muted);font-size:16px">Phone (707) 623-9471 · Fax (707) 978-2463 · <a href="mailto:drfan@fanfamilydentistry.com">drfan@fanfamilydentistry.com</a></span>
+        </div>
+        <div class="actions">
+          <a class="btn btn-ink" href="https://www.google.com/maps/dir/?api=1&amp;destination=1420+Guerneville+Rd+Suite+5,+Santa+Rosa,+CA+95403" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn btn-gold" href="tel:+17076239471">Call the office</a>
+        </div>
+        <table class="hours">
+          <caption>Office hours</caption>
+          <tbody>
+            <tr data-days="1,2,3,4"><th scope="row">Monday to Thursday</th><td>9:00 AM to 5:30 PM</td></tr>
+            <tr data-days="5"><th scope="row">Friday</th><td>Closed</td></tr>
+            <tr data-days="6"><th scope="row">Saturday</th><td>By appointment</td></tr>
+          </tbody>
+        </table>
+        <span style="color:var(--muted);font-size:16px">Walk-ins welcome during office hours. Lunch break 12:30 to 1:30 PM.</span>
+      </div>
+
+      <div class="book" id="book">
+        <h2 style="font-size:32px" data-t="bookTitle">Request an appointment</h2>
+        <div class="thanks" id="thanks" hidden>
+          <b style="font-size:19px">This preview doesn't send requests yet.</b>
+          <span>Please call (707) 623-9471 and the office will find a time for you.</span>
+        </div>
+        <form id="bookForm">
+          <p style="color:var(--muted);font-size:16px">Tell us how to reach you and we'll call to find a time. Please don't include health details here.</p>
+          <div class="field"><label class="lbl" for="nm">Name</label><input id="nm" type="text" autocomplete="name"></div>
+          <div class="field"><label class="lbl" for="ph">Phone</label><input id="ph" type="tel" autocomplete="tel"></div>
+          <div class="row2">
+            <div><label class="lbl" for="when">Best time to call</label><select id="when"><option>Morning</option><option>Afternoon</option><option>Any time</option></select></div>
+            <div><label class="lbl" for="lng">Language</label><select id="lng"><option>English</option><option>Español</option><option>中文</option></select></div>
+          </div>
+          <label class="check" for="newpt"><input type="checkbox" id="newpt">I'm a new patient</label>
+          <button type="submit" class="btn btn-ink" style="justify-content:center">Send request</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="col"><b>Fan Family Dentistry</b><span>Yunfei Fan, D.D.S.</span><span>1420 Guerneville Road, Suite 5, Santa Rosa, CA 95403</span></div>
+    <div class="col"><a href="tel:+17076239471">(707) 623-9471</a><a href="mailto:drfan@fanfamilydentistry.com">drfan@fanfamilydentistry.com</a><span>English · Español · 中文</span></div>
+    <span style="align-self:end">© 2026 Fan Family Dentistry</span>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Call, book or get directions">
+  <a href="tel:+17076239471" style="background:var(--marigold);color:var(--ink)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span data-t="barCall">Call</span></a>
+  <a href="#book" style="background:var(--ink);color:#fff"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16v14H4zM4 10h16M8 3v4M16 3v4"/></svg><span data-t="barBook">Book</span></a>
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=1420+Guerneville+Rd+Suite+5,+Santa+Rosa,+CA+95403" target="_blank" rel="noopener" style="background:var(--mint);color:var(--ink)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><path d="M12 12a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/></svg><span data-t="barMap">Directions</span></a>
+</nav>
+
+<script>
+(() => {
+  const $ = (s) => document.querySelector(s);
+
+  // ---- open now (office is in Pacific time) ----
+  function clock() {
+    const parts = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Los_Angeles', weekday: 'short', hour: 'numeric', minute: 'numeric', hour12: false }).formatToParts(new Date());
+    const get = (t) => (parts.find((p) => p.type === t) || {}).value;
+    return { day: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].indexOf(get('weekday')), mins: (parseInt(get('hour'), 10) % 24) * 60 + parseInt(get('minute'), 10) };
+  }
+  function status() {
+    const { day, mins } = clock(), open = 'var(--open)', shut = 'var(--closed)', mid = 'var(--marigold)';
+    if (day >= 1 && day <= 4) {
+      if (mins < 540) return [shut, 'Closed now · opens today at 9:00 AM', 'Opens today at 9:00 AM'];
+      if (mins < 750) return [open, 'Open now · lunch break at 12:30 PM', 'Open now · walk-ins welcome'];
+      if (mins < 810) return [mid, 'Lunch break · back at 1:30 PM', 'Back from lunch at 1:30 PM'];
+      if (mins < 1050) return [open, 'Open now · until 5:30 PM', 'Open now · walk-ins welcome'];
+      return day === 4 ? [shut, 'Closed now · Saturdays by appointment', 'Closed · Saturdays by appointment'] : [shut, 'Closed now · opens tomorrow at 9:00 AM', 'Opens tomorrow at 9:00 AM'];
+    }
+    if (day === 5) return [shut, 'Closed today · Saturdays by appointment', 'Closed today · call to book Saturday'];
+    if (day === 6) return [mid, 'Saturdays by appointment · call to book', 'Saturday · by appointment'];
+    return [shut, 'Closed now · opens Monday at 9:00 AM', 'Opens Monday at 9:00 AM'];
+  }
+  function paintStatus() {
+    const [c, long, short] = status();
+    $('#dot1').style.background = c; $('#dot2').style.background = c;
+    $('#statusLong').textContent = long; $('#statusShort').textContent = short;
+    const { day } = clock();
+    document.querySelectorAll('table.hours tr').forEach((tr) => tr.classList.toggle('today', tr.dataset.days.split(',').map(Number).includes(day)));
+  }
+  paintStatus(); setInterval(paintStatus, 60000);
+
+  // ---- insurance check ----
+  const PLANS = ['Delta Dental PPO', 'Delta Dental Premier', 'Guardian', 'MetLife', 'Cigna', 'Aetna', 'Premier Access (PPO)', 'Redwood Health Services (RHS)', 'Blue Shield of California', 'Anthem Blue Cross PPO', 'Humana', 'Principal', 'Connection Dental', 'Dental Health Alliance (DHA)', 'Dental Benefit Providers', 'DenteMax'];
+  const tick = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2f6f5c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>';
+  function renderPlans() {
+    const q = $('#plan').value.trim().toLowerCase(), box = $('#plans');
+    const list = q ? PLANS.filter((p) => p.toLowerCase().includes(q)) : PLANS;
+    box.textContent = '';
+    for (const p of list) { const s = document.createElement('span'); s.className = 'plan'; s.innerHTML = tick; s.append(p); box.appendChild(s); }
+    $('#nomatch').hidden = !(q && !list.length);
+  }
+  $('#plan').addEventListener('input', renderPlans); renderPlans();
+
+  // ---- appointment form (preview: nothing is sent) ----
+  $('#bookForm').addEventListener('submit', (e) => { e.preventDefault(); $('#bookForm').hidden = true; $('#thanks').hidden = false; });
+
+  // ---- language for the main labels (sample; full translation comes with the real site) ----
+  const T = {
+    en: { walkins: 'Walk-ins welcome', navServices: 'Services', navInsurance: 'Insurance & payment', navAbout: 'About Dr. Fan', navVisit: 'Visit us', eyebrow: 'Family dentist in Santa Rosa', h1: 'Gentle dental care for the whole family.', sub: 'Dr. Yunfei Fan has been caring for smiles for more than 37 years. Walk-ins are welcome, kids too, and we speak English, Spanish and Chinese.', call: 'Call (707) 623-9471', book: 'Request an appointment', chip1: '37+ years of practice', chip2: 'Most PPO plans accepted', chip3: 'Kids welcome', servicesTitle: 'Care for every smile in the family', insTitle: 'Do you take my insurance?', visitTitle: 'Visit us', bookTitle: 'Request an appointment', barCall: 'Call', barBook: 'Book', barMap: 'Directions' },
+    es: { walkins: 'Atendemos sin cita', navServices: 'Servicios', navInsurance: 'Seguros y pagos', navAbout: 'El Dr. Fan', navVisit: 'Visítenos', eyebrow: 'Dentista familiar en Santa Rosa', h1: 'Atención dental amable para toda la familia.', sub: 'El Dr. Yunfei Fan lleva más de 37 años cuidando sonrisas. Atendemos sin cita, también a niños, y hablamos inglés, español y chino.', call: 'Llame al (707) 623-9471', book: 'Pida una cita', chip1: 'Más de 37 años de experiencia', chip2: 'Aceptamos la mayoría de los seguros PPO', chip3: 'Niños bienvenidos', servicesTitle: 'Cuidamos la sonrisa de toda la familia', insTitle: '¿Aceptan mi seguro?', visitTitle: 'Visítenos', bookTitle: 'Pida una cita', barCall: 'Llamar', barBook: 'Cita', barMap: 'Cómo llegar' },
+    zh: { walkins: '欢迎随时到诊', navServices: '服务项目', navInsurance: '保险与付款', navAbout: '关于医生', navVisit: '来访信息', eyebrow: '圣罗莎家庭牙医', h1: '温和细致的牙科护理，照顾全家人。', sub: 'Yunfei Fan 医生从事牙科工作超过 37 年。欢迎随时到诊，也欢迎儿童就诊。我们提供英语、西班牙语和中文服务。', call: '致电 (707) 623-9471', book: '预约就诊', chip1: '超过 37 年经验', chip2: '接受大多数 PPO 保险', chip3: '欢迎儿童', servicesTitle: '全家人的口腔护理', insTitle: '你们接受我的保险吗？', visitTitle: '来访信息', bookTitle: '预约就诊', barCall: '致电', barBook: '预约', barMap: '路线' }
+  };
+  function setLang(l) {
+    const t = T[l] || T.en;
+    document.documentElement.lang = l === 'zh' ? 'zh-Hans' : l;
+    document.querySelectorAll('[data-t]').forEach((el) => { const k = el.dataset.t; if (t[k]) el.textContent = t[k]; });
+    document.querySelectorAll('.langs button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lang === l)));
+    try { localStorage.setItem('ffd-lang', l); } catch {}
+  }
+  document.querySelectorAll('.langs button').forEach((b) => b.addEventListener('click', () => setLang(b.dataset.lang)));
+  let saved = null; try { saved = localStorage.getItem('ffd-lang'); } catch {}
+  if (saved && saved !== 'en') setLang(saved);
+})();
+</script>
+</body>
+</html>
