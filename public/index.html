@@ -5,14 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Fan Family Dentistry · Santa Rosa family dentist</title>
 <meta name="description" content="Gentle family dentistry in Santa Rosa with Dr. Yunfei Fan, D.D.S. Walk-ins welcome. We speak English, Spanish and Chinese.">
-<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://fanfamilydentistry.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fan Family Dentistry">
+<meta property="og:title" content="Fan Family Dentistry · Santa Rosa family dentist">
+<meta property="og:description" content="Gentle family dentistry in Santa Rosa with Dr. Yunfei Fan, D.D.S. Walk-ins welcome. We speak English, Spanish and Chinese.">
+<meta property="og:url" content="https://fanfamilydentistry.com/">
+<meta property="og:image" content="https://fanfamilydentistry.com/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#12352f">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Ccircle cx='22' cy='22' r='22' fill='%2312352f'/%3E%3Cpath d='M15.5 12c-3 0-5.5 2.4-5.5 5.6 0 3 1.2 5.3 2.1 8.2.8 2.7 1.2 9.2 3.9 9.2 2.1 0 2.2-6.4 4.7-6.4h2.6c2.5 0 2.6 6.4 4.7 6.4 2.7 0 3.1-6.5 3.9-9.2.9-2.9 2.1-5.2 2.1-8.2 0-3.2-2.5-5.6-5.5-5.6-2.6 0-4 1.6-6.5 1.6s-3.9-1.6-6.5-1.6z' fill='%23fff'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=Noto+Sans+SC:wght@400;700&display=swap">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Dentist","name":"Fan Family Dentistry","url":"https://fanfamilydentistry.com/","telephone":"+1-707-623-9471","faxNumber":"+1-707-978-2463","email":"drfan@fanfamilydentistry.com","address":{"@type":"PostalAddress","streetAddress":"1420 Guerneville Road, Suite 5","addressLocality":"Santa Rosa","addressRegion":"CA","postalCode":"95403","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"09:00","closes":"12:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"13:30","closes":"17:30"}],"knowsLanguage":["en","es","zh"],"founder":{"@type":"Person","name":"Yunfei Fan, D.D.S."}}
+{"@context":"https://schema.org","@type":"Dentist","name":"Fan Family Dentistry","url":"https://fanfamilydentistry.com/","image":"https://fanfamilydentistry.com/images/og-image.jpg","telephone":"+1-707-623-9471","faxNumber":"+1-707-978-2463","email":"drfan@fanfamilydentistry.com","address":{"@type":"PostalAddress","streetAddress":"1420 Guerneville Road, Suite 5","addressLocality":"Santa Rosa","addressRegion":"CA","postalCode":"95403","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"09:00","closes":"12:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"13:30","closes":"17:30"}],"knowsLanguage":["en","es","zh"],"founder":{"@type":"Person","name":"Yunfei Fan, D.D.S."}}
 </script>
 <style>
 /* Layout: a calm, phone-first practice page. Evergreen ink, mint tints, one marigold call to action. */
@@ -73,6 +82,7 @@ nav.main .btn { padding: 11px 16px; min-height: 44px; font-size: 16px; }
 .chip { background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 700; }
 .hero-art { flex: 1 1 380px; min-width: 0; position: relative; }
 .hero-art .placeholder { aspect-ratio: 4 / 5; }
+.hero-art .photo { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 28px; box-shadow: 0 20px 50px rgba(18, 53, 47, 0.14); background: var(--mint); }
 .open-card { position: absolute; left: -16px; bottom: 26px; background: var(--surface); border-radius: 18px; padding: 14px 18px; box-shadow: 0 14px 40px rgba(18, 53, 47, 0.16); display: grid; gap: 4px; max-width: 290px; }
 .open-card b { display: inline-flex; align-items: center; gap: 8px; }
 .open-card span { font-size: 15px; color: var(--muted); }
@@ -108,6 +118,13 @@ input[type="search"], input[type="text"], input[type="tel"], select { width: 100
 
 .about { display: flex; flex-wrap: wrap; gap: 48px; align-items: center; }
 .about .placeholder { flex: 1 1 320px; aspect-ratio: 1; background: repeating-linear-gradient(135deg, #f8e3b8 0 16px, #f3d79f 16px 32px); color: #6b4a12; }
+.about-photo { flex: 1 1 320px; min-width: 0; margin: 0; display: grid; gap: 10px; }
+.about-photo img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 28px; background: var(--mint); }
+.about-photo figcaption, .gallery figcaption { color: var(--muted); font-size: 15px; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+.gallery figure { margin: 0; display: grid; gap: 8px; }
+.gallery img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 20px; background: var(--mint); }
+.book .btn { justify-content: center; }
 .about .copy { flex: 1.3 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 18px; }
 .about .copy > p { font-size: 19px; color: var(--ink-2); }
 .timeline { border-left: 2px solid var(--line); margin-left: 6px; display: grid; gap: 18px; }
@@ -161,8 +178,6 @@ footer .col { display: grid; gap: 4px; }
 </style>
 </head>
 <body>
-<div class="preview">Preview of the new Fan Family Dentistry website. Real photos and reviews are coming.</div>
-
 <div class="strip">
   <div class="wrap">
     <div style="display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center">
@@ -214,7 +229,7 @@ footer .col { display: grid; gap: 4px; }
       </div>
     </div>
     <div class="hero-art">
-      <div class="placeholder" role="img" aria-label="Photo coming soon">[Photo: Dr. Fan with a young patient]</div>
+      <img class="photo" src="images/treatment-rooms.webp" width="1600" height="1176" fetchpriority="high" alt="Two bright treatment rooms at Fan Family Dentistry, each with a dental chair and a beach painting">
       <div class="open-card">
         <b><span class="dot" id="dot2"></span><span id="statusShort">Walk-ins welcome</span></b>
         <span>1420 Guerneville Rd, Suite 5 · Santa Rosa</span>
@@ -265,7 +280,7 @@ footer .col { display: grid; gap: 4px; }
 
   <section class="wrap block" id="about">
     <div class="about">
-      <div class="placeholder" role="img" aria-label="Portrait coming soon">[Portrait: Dr. Yunfei Fan]</div>
+      <figure class="about-photo"><img src="images/front-desk.webp" width="1200" height="1200" loading="lazy" alt="The front desk at Fan Family Dentistry, with a door to the waiting room"><figcaption data-t="deskCap">Our front desk at 1420 Guerneville Road</figcaption></figure>
       <div class="copy">
         <span class="eyebrow">Meet your dentist</span>
         <h2>Dr. Yunfei Fan, D.D.S.</h2>
@@ -279,11 +294,14 @@ footer .col { display: grid; gap: 4px; }
     </div>
   </section>
 
-  <section class="wrap block" aria-label="Patient reviews">
-    <div class="reviews">
-      <figure><blockquote style="margin:0;font-size:18px">[A real patient review, used with permission]</blockquote><figcaption>[Patient first name] · Google review</figcaption></figure>
-      <figure><blockquote style="margin:0;font-size:18px">[A real patient review, used with permission]</blockquote><figcaption>[Patient first name] · Google review</figcaption></figure>
-      <figure><blockquote style="margin:0;font-size:18px">[A real patient review, used with permission]</blockquote><figcaption>[Patient first name] · Google review</figcaption></figure>
+  <section class="wrap block" id="office">
+    <div class="head">
+      <h2 data-t="officeTitle">Inside our office</h2>
+      <p data-t="officeSub">Bright, comfortable treatment rooms and a quiet waiting room.</p>
+    </div>
+    <div class="gallery">
+      <figure><img src="images/treatment-room.webp" width="1200" height="900" loading="lazy" alt="Two treatment rooms side by side, one with a painting of a hillside villa"><figcaption data-t="capRooms">Treatment rooms</figcaption></figure>
+      <figure><img src="images/waiting-room.webp" width="1200" height="900" loading="lazy" alt="The waiting room, with green and red armchairs under a garden painting"><figcaption data-t="capWait">Waiting room</figcaption></figure>
     </div>
   </section>
 
@@ -314,21 +332,10 @@ footer .col { display: grid; gap: 4px; }
 
       <div class="book" id="book">
         <h2 style="font-size:32px" data-t="bookTitle">Request an appointment</h2>
-        <div class="thanks" id="thanks" hidden>
-          <b style="font-size:19px">This preview doesn't send requests yet.</b>
-          <span>Please call (707) 623-9471 and the office will find a time for you.</span>
-        </div>
-        <form id="bookForm">
-          <p style="color:var(--muted);font-size:16px">Tell us how to reach you and we'll call to find a time. Please don't include health details here.</p>
-          <div class="field"><label class="lbl" for="nm">Name</label><input id="nm" type="text" autocomplete="name"></div>
-          <div class="field"><label class="lbl" for="ph">Phone</label><input id="ph" type="tel" autocomplete="tel"></div>
-          <div class="row2">
-            <div><label class="lbl" for="when">Best time to call</label><select id="when"><option>Morning</option><option>Afternoon</option><option>Any time</option></select></div>
-            <div><label class="lbl" for="lng">Language</label><select id="lng"><option>English</option><option>Español</option><option>中文</option></select></div>
-          </div>
-          <label class="check" for="newpt"><input type="checkbox" id="newpt">I'm a new patient</label>
-          <button type="submit" class="btn btn-ink" style="justify-content:center">Send request</button>
-        </form>
+        <p style="color:var(--muted);font-size:16px" data-t="bookSub">Call during office hours and we'll find a time that works for you. Walk-ins are welcome too.</p>
+        <a class="btn btn-gold" href="tel:+17076239471"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span data-t="call">Call (707) 623-9471</span></a>
+        <a class="btn btn-mint" href="mailto:drfan@fanfamilydentistry.com?subject=Appointment%20request"><span data-t="emailBtn">Email the office</span></a>
+        <p style="color:var(--muted);font-size:15px" data-t="bookNote">In an email, just leave your name, phone number and the best time to call. Please don't include health details.</p>
       </div>
     </div>
   </div>
@@ -392,14 +399,11 @@ footer .col { display: grid; gap: 4px; }
   }
   $('#plan').addEventListener('input', renderPlans); renderPlans();
 
-  // ---- appointment form (preview: nothing is sent) ----
-  $('#bookForm').addEventListener('submit', (e) => { e.preventDefault(); $('#bookForm').hidden = true; $('#thanks').hidden = false; });
-
-  // ---- language for the main labels (sample; full translation comes with the real site) ----
+  // ---- language for the main labels ----
   const T = {
-    en: { walkins: 'Walk-ins welcome', navServices: 'Services', navInsurance: 'Insurance & payment', navAbout: 'About Dr. Fan', navVisit: 'Visit us', eyebrow: 'Family dentist in Santa Rosa', h1: 'Gentle dental care for the whole family.', sub: 'Dr. Yunfei Fan has been caring for smiles for more than 37 years. Walk-ins are welcome, kids too, and we speak English, Spanish and Chinese.', call: 'Call (707) 623-9471', book: 'Request an appointment', chip1: '37+ years of practice', chip2: 'Most PPO plans accepted', chip3: 'Kids welcome', servicesTitle: 'Care for every smile in the family', insTitle: 'Do you take my insurance?', visitTitle: 'Visit us', bookTitle: 'Request an appointment', barCall: 'Call', barBook: 'Book', barMap: 'Directions' },
-    es: { walkins: 'Atendemos sin cita', navServices: 'Servicios', navInsurance: 'Seguros y pagos', navAbout: 'El Dr. Fan', navVisit: 'Visítenos', eyebrow: 'Dentista familiar en Santa Rosa', h1: 'Atención dental amable para toda la familia.', sub: 'El Dr. Yunfei Fan lleva más de 37 años cuidando sonrisas. Atendemos sin cita, también a niños, y hablamos inglés, español y chino.', call: 'Llame al (707) 623-9471', book: 'Pida una cita', chip1: 'Más de 37 años de experiencia', chip2: 'Aceptamos la mayoría de los seguros PPO', chip3: 'Niños bienvenidos', servicesTitle: 'Cuidamos la sonrisa de toda la familia', insTitle: '¿Aceptan mi seguro?', visitTitle: 'Visítenos', bookTitle: 'Pida una cita', barCall: 'Llamar', barBook: 'Cita', barMap: 'Cómo llegar' },
-    zh: { walkins: '欢迎随时到诊', navServices: '服务项目', navInsurance: '保险与付款', navAbout: '关于医生', navVisit: '来访信息', eyebrow: '圣罗莎家庭牙医', h1: '温和细致的牙科护理，照顾全家人。', sub: 'Yunfei Fan 医生从事牙科工作超过 37 年。欢迎随时到诊，也欢迎儿童就诊。我们提供英语、西班牙语和中文服务。', call: '致电 (707) 623-9471', book: '预约就诊', chip1: '超过 37 年经验', chip2: '接受大多数 PPO 保险', chip3: '欢迎儿童', servicesTitle: '全家人的口腔护理', insTitle: '你们接受我的保险吗？', visitTitle: '来访信息', bookTitle: '预约就诊', barCall: '致电', barBook: '预约', barMap: '路线' }
+    en: { walkins: 'Walk-ins welcome', navServices: 'Services', navInsurance: 'Insurance & payment', navAbout: 'About Dr. Fan', navVisit: 'Visit us', eyebrow: 'Family dentist in Santa Rosa', h1: 'Gentle dental care for the whole family.', sub: 'Dr. Yunfei Fan has been caring for smiles for more than 37 years. Walk-ins are welcome, kids too, and we speak English, Spanish and Chinese.', call: 'Call (707) 623-9471', book: 'Request an appointment', chip1: '37+ years of practice', chip2: 'Most PPO plans accepted', chip3: 'Kids welcome', servicesTitle: 'Care for every smile in the family', insTitle: 'Do you take my insurance?', visitTitle: 'Visit us', bookTitle: 'Request an appointment', bookSub: "Call during office hours and we'll find a time that works for you. Walk-ins are welcome too.", emailBtn: 'Email the office', bookNote: "In an email, just leave your name, phone number and the best time to call. Please don't include health details.", officeTitle: 'Inside our office', officeSub: 'Bright, comfortable treatment rooms and a quiet waiting room.', capRooms: 'Treatment rooms', capWait: 'Waiting room', deskCap: 'Our front desk at 1420 Guerneville Road', barCall: 'Call', barBook: 'Book', barMap: 'Directions' },
+    es: { walkins: 'Atendemos sin cita', navServices: 'Servicios', navInsurance: 'Seguros y pagos', navAbout: 'El Dr. Fan', navVisit: 'Visítenos', eyebrow: 'Dentista familiar en Santa Rosa', h1: 'Atención dental amable para toda la familia.', sub: 'El Dr. Yunfei Fan lleva más de 37 años cuidando sonrisas. Atendemos sin cita, también a niños, y hablamos inglés, español y chino.', call: 'Llame al (707) 623-9471', book: 'Pida una cita', chip1: 'Más de 37 años de experiencia', chip2: 'Aceptamos la mayoría de los seguros PPO', chip3: 'Niños bienvenidos', servicesTitle: 'Cuidamos la sonrisa de toda la familia', insTitle: '¿Aceptan mi seguro?', visitTitle: 'Visítenos', bookTitle: 'Pida una cita', bookSub: 'Llámenos en horario de atención y buscaremos un horario que le convenga. También atendemos sin cita.', emailBtn: 'Escriba al consultorio', bookNote: 'En su correo, deje solo su nombre, su teléfono y la mejor hora para llamarle. Por favor, no incluya información de salud.', officeTitle: 'Conozca nuestro consultorio', officeSub: 'Salas de tratamiento luminosas y cómodas, y una sala de espera tranquila.', capRooms: 'Salas de tratamiento', capWait: 'Sala de espera', deskCap: 'Nuestra recepción en 1420 Guerneville Road', barCall: 'Llamar', barBook: 'Cita', barMap: 'Cómo llegar' },
+    zh: { walkins: '欢迎随时到诊', navServices: '服务项目', navInsurance: '保险与付款', navAbout: '关于医生', navVisit: '来访信息', eyebrow: '圣罗莎家庭牙医', h1: '温和细致的牙科护理，照顾全家人。', sub: 'Yunfei Fan 医生从事牙科工作超过 37 年。欢迎随时到诊，也欢迎儿童就诊。我们提供英语、西班牙语和中文服务。', call: '致电 (707) 623-9471', book: '预约就诊', chip1: '超过 37 年经验', chip2: '接受大多数 PPO 保险', chip3: '欢迎儿童', servicesTitle: '全家人的口腔护理', insTitle: '你们接受我的保险吗？', visitTitle: '来访信息', bookTitle: '预约就诊', bookSub: '请在办公时间致电，我们会为您安排合适的时间。也欢迎随时到诊。', emailBtn: '发送邮件', bookNote: '邮件中只需留下您的姓名、电话和方便联系的时间。请不要填写健康信息。', officeTitle: '诊所环境', officeSub: '明亮舒适的诊室和安静的候诊室。', capRooms: '诊室', capWait: '候诊室', deskCap: '位于 1420 Guerneville Road 的前台', barCall: '致电', barBook: '预约', barMap: '路线' }
   };
   function setLang(l) {
     const t = T[l] || T.en;
