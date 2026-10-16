@@ -83,7 +83,7 @@ nav.main .btn { padding: 11px 16px; min-height: 44px; font-size: 16px; }
 .hero-art { flex: 1 1 380px; min-width: 0; position: relative; }
 .hero-art .placeholder { aspect-ratio: 4 / 5; }
 .hero-art .photo { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 28px; box-shadow: 0 20px 50px rgba(18, 53, 47, 0.14); background: var(--mint); }
-.open-card { position: absolute; left: -16px; bottom: 26px; background: var(--surface); border-radius: 18px; padding: 14px 18px; box-shadow: 0 14px 40px rgba(18, 53, 47, 0.16); display: grid; gap: 4px; max-width: 290px; }
+.open-card { margin-top: 14px; background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 14px 18px; display: flex; flex-wrap: wrap; gap: 4px 18px; align-items: center; justify-content: space-between; }
 .open-card b { display: inline-flex; align-items: center; gap: 8px; }
 .open-card span { font-size: 15px; color: var(--muted); }
 
@@ -167,7 +167,6 @@ footer .col { display: grid; gap: 4px; }
 @media (max-width: 720px) {
   nav.main .lnk { display: none; }
   .hero { padding-block: 32px 40px; gap: 28px; }
-  .open-card { left: 12px; bottom: 12px; }
   .callbar { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; position: fixed; left: 0; right: 0; bottom: 0; z-index: 6;
     background: var(--surface); border-top: 1px solid var(--line); box-shadow: 0 -10px 30px rgba(18, 53, 47, 0.08);
     padding: 10px max(12px, env(safe-area-inset-right, 0px)) calc(12px + env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px)); }
