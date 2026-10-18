@@ -9,7 +9,7 @@ A single static page. No build step.
 - `wrangler.jsonc` tells Cloudflare to serve `public/`
 
 ## Hosting
-GitHub repo `drew2apps/fan-family-dentistry`, deployed by the Cloudflare Worker `fan-family-dentistry`
+GitHub repo `strobidev/fan-family-dentistry`, deployed by the Cloudflare Worker `fan-family-dentistry`
 (Workers Builds: every push to `main` runs `npx wrangler deploy`).
 Preview address: https://fan-family-dentistry.drew2apps.workers.dev
 
